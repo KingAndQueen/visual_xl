@@ -29,7 +29,7 @@ flags.DEFINE_string("gcp_project", default=None,
 flags.DEFINE_string("tpu_zone",default=None,
       help="GCE zone where the Cloud TPU is located in. If not specified, we "
       "will attempt to automatically detect the GCE project from metadata.")
-flags.DEFINE_bool("use_tpu", default=True,
+flags.DEFINE_bool("use_tpu", default=False,
       help="Use TPUs rather than plain CPUs.")
 flags.DEFINE_integer("num_hosts", default=1,
       help="number of TPU hosts")
